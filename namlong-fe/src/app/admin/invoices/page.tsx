@@ -183,8 +183,10 @@ const InvoicePage = () => {
 
   // Update URL when filters change
   useEffect(() => {
-      updateQueryParams(filters);
-  }, [filters]);
+      if (updateQueryParams && typeof updateQueryParams === 'function') {
+        updateQueryParams(filters);
+      }
+  }, [filters, updateQueryParams]);
 
   // Set customers data when loaded
   useEffect(() => {

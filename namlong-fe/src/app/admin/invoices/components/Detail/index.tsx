@@ -55,7 +55,7 @@ export default function Detail({ invoice, customers }) {
 
       <Grid.Col span={12}>
         <Text className="text-gray-600">Tên khách hàng:</Text>
-        <Text fw={700}>{customers?.find(c => c.tax_id === customer_tax)?.name || 'N/A'}</Text>
+        <Text fw={700}>{customers?.find(c => c.tax_number === customer_tax)?.name || 'N/A'}</Text>
       </Grid.Col>
       
       <Grid.Col span={12}>
@@ -70,7 +70,7 @@ export default function Detail({ invoice, customers }) {
       
       <Grid.Col span={12}>
         <Text className="text-gray-600">Ngày ký:</Text>
-        <Text fw={700}>{dayjs(invoice.created_date).format("DD/MM/YYYY")}</Text>
+        <Text fw={700}>{dayjs(signed_date).format("DD/MM/YYYY")}</Text>
       </Grid.Col>
 
       {description && (

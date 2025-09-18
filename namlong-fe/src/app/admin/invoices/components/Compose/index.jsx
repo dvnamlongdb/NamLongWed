@@ -149,8 +149,8 @@ export default function ComposeForm({ initialValues, customers, onSubmit }) {
             label="Khách hàng"
             placeholder="Chọn khách hàng"
             data={customers?.map(customer => ({
-              value: customer.tax_id,
-              label: `${customer.name} (${customer.tax_id})`
+              value: customer.tax_number,
+              label: `${customer.name} (${customer.tax_number})`
             })) || []}
             value={form.values.customer_tax}
             onChange={handleCustomerChange}
