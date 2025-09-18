@@ -51,7 +51,7 @@ import { useAuth } from "../../../contexts/AuthContext";
 
 import Layout from "../../../components/Layout";
 
-export default function NotificationsPage() {
+function NotificationsContent() {
   const router = useRouter();
   const { userRole, isAdmin } = useAuth();
   const [notifications, setNotifications] = useState([
@@ -564,4 +564,13 @@ export default function NotificationsPage() {
       </Card>
     </div>
   );
-} 
+}
+import { AuthProvider } from "../../../contexts/AuthContext"; // nếu chưa import AuthProvider
+
+export default function NotificationsPageWrapper() {
+  return (
+    <AuthProvider>
+      <NotificationsContent />
+    </AuthProvider>
+  );
+}

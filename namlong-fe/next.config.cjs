@@ -5,7 +5,6 @@ const nextConfig = {
   reactStrictMode: false,
   experimental: {
     optimizePackageImports: ["@mantine/core", "@mantine/hooks"],
-    appDir: path.join(__dirname, 'src', 'app'),
   },
   eslint: {
     ignoreDuringBuilds: true,
