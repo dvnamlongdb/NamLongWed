@@ -6,7 +6,7 @@
  * for educational and development purposes.
  */
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import {
   ActionIcon,
   Button,
@@ -32,7 +32,9 @@ import dayjs from "dayjs";
 import ClientOnly from "../../../components/ClientOnly";
 import PortfolioForm from "./components/PortfolioForm";
 
-const InvestmentPortfoliosPage = () => {
+export const dynamic = 'force-dynamic';
+
+const InvestmentPortfoliosInner = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [detailPortfolio, setDetailPortfolio] = useState(null);
   const [modalType, setModalType] = useState(""); // "detail" or "form"
@@ -284,7 +286,6 @@ const InvestmentPortfoliosPage = () => {
   });
 
   return (
-    <ClientOnly fallback={<div>Loading...</div>}>
       <>
         <div className="relative">
           <LoadingOverlay visible={loading} />
@@ -505,8 +506,15 @@ const InvestmentPortfoliosPage = () => {
           )}
         </Modal>
       </>
-    </ClientOnly>
   );
 };
 
-export default InvestmentPortfoliosPage; 
+export default function InvestmentPortfoliosPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ClientOnly fallback={<div>Loading...</div>}>
+        <InvestmentPortfoliosInner />
+      </ClientOnly>
+    </Suspense>
+  );
+}

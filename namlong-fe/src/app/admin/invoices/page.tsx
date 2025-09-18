@@ -39,6 +39,8 @@ import { MonthPickerInput } from "@mantine/dates";
 import localizedFormat from "dayjs/plugin/localizedFormat";
 import ExportButton from "../../../components/ExportButton";
 
+export const dynamic = 'force-dynamic';
+
 dayjs.extend(localizedFormat);
 
 const monthsObject = [
@@ -200,6 +202,7 @@ const InvoicePage = () => {
   const isLoading = invoicesLoading || customersLoading || mutationLoading;
 
   return (
+      <Suspense fallback={<div>Loading...</div>}>
       <>
       <div style={{ 
         height: '100vh', 
@@ -489,6 +492,7 @@ const InvoicePage = () => {
           {detailInvoice && <Detail invoice={detailInvoice} customers={customers} />}
       </Modal>
       </>
+      </Suspense>
   );
 };
 

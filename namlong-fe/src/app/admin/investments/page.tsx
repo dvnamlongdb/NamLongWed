@@ -6,7 +6,7 @@
  * for educational and development purposes.
  */
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import InvestmentForm from "./components/Compose";
 import {
   ActionIcon,
@@ -30,6 +30,8 @@ import Layout from "../../../components/Layout";
 import dayjs from "dayjs";
 import ClientOnly from "../../../components/ClientOnly";
 import ExportButton from "../../../components/ExportButton";
+
+export const dynamic = 'force-dynamic';
 
 const Action = ({ onDetail }) => {
   return (
@@ -254,6 +256,7 @@ const InvestmentsPage = () => {
   };
 
   return (
+      <Suspense fallback={<div>Loading...</div>}>
       <ClientOnly fallback={<div>Loading...</div>}>
       <>
       <div className="relative">
@@ -410,6 +413,7 @@ const InvestmentsPage = () => {
       </Modal>
       </>
       </ClientOnly>
+      </Suspense>
   );
 };
 
