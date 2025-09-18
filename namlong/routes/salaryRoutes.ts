@@ -9,16 +9,16 @@ import express from "express";
 
 const router = express.Router();
 const {
-  getAllSalary,
-  createSalary,
+  getAllSalaries,
+  addSalary,
   updateSalary,
   deleteSalary,
 } = require("../controllers/salaryController");
 const { verifyToken } = require("../controllers/userController");
 
 // Routes
-router.get("/", verifyToken, getAllSalary);
-router.post("/", verifyToken, createSalary);
+router.get("/", verifyToken, getAllSalaries);
+router.post("/", verifyToken, addSalary);
 router.put("/:id", verifyToken, updateSalary);
 router.delete("/:id", verifyToken, deleteSalary);
 

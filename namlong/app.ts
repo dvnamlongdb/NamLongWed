@@ -2,7 +2,7 @@ require('dotenv').config();
 
 import express from 'express';
 import bodyParser from 'body-parser';
-import connectDB from './Database/config/db';
+const connectDB = require('./Database/config/db');
 const cors = require('cors');
 
 // Routes
