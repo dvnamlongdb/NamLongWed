@@ -237,7 +237,7 @@ export default function NotificationsPage() {
   };
 
   // Check permissions
-  const canViewNotifications = ["director", "hr"].includes(CURRENT_USER_ROLE);
+  const canViewNotifications = ["director", "hr"].includes(userRole);
 
   if (!canViewNotifications) {
     return (
