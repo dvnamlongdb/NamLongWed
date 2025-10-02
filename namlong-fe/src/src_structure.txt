@@ -1,0 +1,106 @@
+.
+├── app
+│   ├── admin
+│   │   ├── customers
+│   │   │   ├── components
+│   │   │   │   └── Compose
+│   │   │   └── page.tsx
+│   │   ├── investment-calculator
+│   │   │   ├── components
+│   │   │   │   ├── ComparisonChart.jsx
+│   │   │   │   ├── FinancialMetrics.jsx
+│   │   │   │   ├── InvestmentForm.jsx
+│   │   │   │   ├── InvestmentNotes.jsx
+│   │   │   │   └── PredictionChart.jsx
+│   │   │   └── page.tsx
+│   │   ├── investment-portfolios
+│   │   │   ├── components
+│   │   │   │   └── PortfolioForm.jsx
+│   │   │   ├── page.tsx
+│   │   │   └── page.tsx.backup
+│   │   ├── investments
+│   │   │   ├── components
+│   │   │   │   └── Compose
+│   │   │   ├── layout.jsx
+│   │   │   └── page.tsx
+│   │   ├── invoices
+│   │   │   ├── components
+│   │   │   │   ├── Compose
+│   │   │   │   └── Detail
+│   │   │   ├── layout.jsx
+│   │   │   └── page.tsx
+│   │   ├── notifications
+│   │   │   └── page.tsx
+│   │   ├── page.tsx
+│   │   ├── page.tsx.backup
+│   │   ├── page_new.tsx
+│   │   ├── page_old.tsx
+│   │   ├── projects
+│   │   │   ├── components
+│   │   │   │   ├── ProjectDetail.jsx
+│   │   │   │   ├── ProjectForm.jsx
+│   │   │   │   └── ProjectProgress.jsx
+│   │   │   └── page.tsx
+│   │   ├── revenue
+│   │   │   └── page.tsx
+│   │   ├── salaries
+│   │   │   ├── components
+│   │   │   │   ├── Compose
+│   │   │   │   └── Detail
+│   │   │   ├── page.tsx
+│   │   │   └── page_backup.tsx
+│   │   ├── services
+│   │   │   └── index.js
+│   │   ├── staff
+│   │   │   ├── components
+│   │   │   │   ├── Compose
+│   │   │   │   └── Detail
+│   │   │   └── page.tsx
+│   │   ├── teaching
+│   │   │   └── schedule
+│   │   │       └── page.tsx
+│   │   └── user-management
+│   │       ├── components
+│   │       │   ├── CreateUserForm.jsx
+│   │       │   ├── NotificationPanel.jsx
+│   │       │   └── UserStats.jsx
+│   │       └── page.tsx
+│   ├── components
+│   │   └── Footer.tsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.jsx
+│   ├── page.tsx
+│   ├── test
+│   │   └── page.tsx
+│   └── theme.ts
+├── components
+│   ├── ClientOnly.tsx
+│   ├── ExportButton.tsx
+│   ├── Header
+│   │   └── index.tsx
+│   ├── Layout
+│   │   └── index.tsx
+│   ├── Navbar
+│   │   ├── index.css
+│   │   └── index.tsx
+│   ├── NotificationBell
+│   │   └── index.jsx
+│   ├── PermissionGuard
+│   │   └── index.jsx
+│   └── UserButton
+│       └── index.jsx
+├── constants
+│   └── formOptions.js
+├── contexts
+│   └── AuthContext.js
+├── hooks
+│   └── useQueryParams.js
+├── service
+│   ├── hook.ts
+│   └── index.ts
+├── src_structure.txt
+└── utils
+    └── format.ts
+
+47 directories, 56 files

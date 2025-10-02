@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Force light theme; disable auto dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Global comfortable spacing for all Mantine form controls */
+.mantine-Group-root,
+.mantine-TextInput-root,
+.mantine-PasswordInput-root,
+.mantine-Textarea-root,
+.mantine-NumberInput-root,
+.mantine-Select-root,
+.mantine-DateInput-root,
+.mantine-MonthPickerInput-root,
+.mantine-Combobox-root,
+.mantine-NativeSelect-root,
+.mantine-Checkbox-root,
+.mantine-RadioGroup-root,
+.mantine-SegmentedControl-root {
+  margin-bottom: 14px;
+}
+
+/* Ensure consistent spacing between inline items */
+.mantine-Group-root {
+  gap: 14px !important;
+}
+
+/* Add row spacing in grid-based forms (two-column layouts) */
+.mantine-Grid-root,
+.mantine-Grid-inner {
+  row-gap: 16px !important;
+}
+
+/* Most Mantine inputs are wrapped by InputWrapper; add universal margin */
+.mantine-InputWrapper-root {
+  margin-bottom: 16px !important;
+}
+
+/* Slightly larger padding inside modals so content isn't tight against edges */
+.mantine-Modal-body {
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+}
