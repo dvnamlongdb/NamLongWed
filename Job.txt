@@ -1,0 +1,22 @@
+chị nhung: danh sách hóa đơn
+- Danh sách đầu tư: Bỏ tổng đầu tư, thêm địa chỉ, thêm ghi chú 
+- Danh sách nhân viên: Mã nhân viên, Tên nhân Viên,chức vụ, số điện thoại, địa chỉ, số căn cước, tài khoản ngân hàng (Thêm QR), ghi chú (chỉnh các nút), thêm bảng thông tin chi tiết
+- Danh sách khách hàng: Mã số thuế, tên khách hàng, địa chỉ,ghi chú (Thêm nút xóa)
+- Danh sách khách hàng và danh sách đầu tư và danh sách các khoản đầu tư thông nhau
+- thêm chi tiết: 
+	+ làm lại các chức năng
+	+ làm khung thông báo
+	+ thông tin chi tiết tài khoản, đổi mật khẩu, đổi thông tin
+	+ ...
+- thêm: 
+	+ Danh sách các khoản đầu tư: tên khách hàng, Khoản đầu tư đầu tiên, khoản đầu tư định kỳ(làm nút chi tiết), tổng đầu tư 
+	+ Doanh Thu (Boss và thu ngân, thu quỹ):1 tab (ô mốc thời gian(theo ngày, theo tháng, theo quý, từ ngày, đến ngày), khách hàng, ngày thu, hình thức thu, Tổng Nhận, dòng tổng doanh thu ), 1 tab (lịch sử giao dịch(Mốc thời gian từ ngày đến ngày ): Khách Hàng, các khoản thu, các khoản chi,thời gian)
+	+ Tính Toán Đầu Tư (Boss):
+	+ Tiến trình công việc (All): chứa các ô dự án đang tiến triển có trạng thái, nút tạo dự án, có chi tiết dự án, nhân viên có thể chụp ảnh để đăng tiến trình, nhân viên phụ trách có thể điều chỉnh tiến trình, có ghi chú, khi tiến trình hoàn thành thì cần Boss phê duyệt, thông báo tiến trình hoàn thành khi sếp phê duyệt, lịch sử tiến trình hoàn thành
+	+ Cấp Quyền tạo tài khoản nhân viên cho HR (Boss duyệt) 
+(-Cập nhật: (tính toán port) 
+	+ Làm lại đăng nhập
+	+ làm giới thiệu
+	+ Làm footer
+)       
+- thêm xuất dữ liệu ra excel
